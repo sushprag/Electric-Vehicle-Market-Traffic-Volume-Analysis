@@ -14,7 +14,7 @@ This project leverages the Electric Vehicle Population dataset containing over *
 * Classify vehicles based on CAFV eligibility
 * Forecast EV demand by ZIP code
 
-🚩 Business Problem
+##  Business Problem
 
 Electric vehicle (EV) adoption is rapidly increasing, creating challenges for policymakers, utility providers, manufacturers, and infrastructure planners. Key questions include:
 
@@ -34,7 +34,7 @@ This project addresses these challenges by leveraging PySpark and machine learni
 * Identify relationships between vehicle price, range, and model characteristics
 * Enable manufacturers and policymakers to make data-driven decisions
 
-## 📊 Dataset
+##  Dataset
 
 **Source:** Electric Vehicle Population Data
 
@@ -64,7 +64,7 @@ This project addresses these challenges by leveraging PySpark and machine learni
 * CAFV Eligibility
 * Electric Utility Provider
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 * Python
 * PySpark
@@ -86,7 +86,7 @@ This project addresses these challenges by leveraging PySpark and machine learni
 * Encoded categorical variables using `StringIndexer` and `OneHotEncoder`
 * Engineered lag features for ZIP code demand forecasting
 
-## 📈 Exploratory Data Analysis
+##  Exploratory Data Analysis
 
 Key findings from the exploratory analysis include:
 
@@ -170,7 +170,7 @@ Classes:
 * Engineered lag features using window functions
 * Built a baseline forecasting model using linear regression
 
-## 💡 Key Insights
+##  Key Insights
 
 * Electric Range is the strongest predictor of CAFV eligibility, accounting for 43.87% of the model's predictive power.
 * Model Year significantly influences CAFV qualification, with newer vehicles more likely to meet eligibility criteria.
@@ -183,7 +183,7 @@ Classes:
 
 
 
-## 🚀 Business Impact
+##  Business Impact
 
 This project demonstrates how machine learning can support:
 
@@ -194,12 +194,11 @@ This project demonstrates how machine learning can support:
 * Policy design and clean transportation initiatives
 
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 * Implement XGBoost for model benchmarking
 * Integrate charging station and demographic datasets
 * Deploy models using Azure Databricks
-* Build interactive Power BI dashboards
 * Develop real-time EV demand forecasting pipelines
 
 ## 👤 Author
