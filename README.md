@@ -1,8 +1,8 @@
-# ⚡ Electric Vehicle Population Analytics & CAFV Eligibility Prediction
+#  Electric Vehicle Population Analytics & CAFV Eligibility Prediction
 
 An end-to-end big data analytics project that analyzes electric vehicle adoption trends, predicts Clean Alternative Fuel Vehicle (CAFV) eligibility, estimates electric range, and forecasts EV demand using PySpark and machine learning.
 
-## 📌 Overview
+## Project Overview
 
 As electric vehicle adoption accelerates across the United States, manufacturers, policymakers, utilities, and infrastructure planners require data-driven insights to support strategic decisions.
 
@@ -14,7 +14,19 @@ This project leverages the Electric Vehicle Population dataset containing over *
 * Classify vehicles based on CAFV eligibility
 * Forecast EV demand by ZIP code
 
-## 🎯 Business Objectives
+🚩 Business Problem
+
+Electric vehicle (EV) adoption is rapidly increasing, creating challenges for policymakers, utility providers, manufacturers, and infrastructure planners. Key questions include:
+
+* Which factors determine whether a vehicle qualifies for Clean Alternative Fuel Vehicle (CAFV) incentives?
+* How can stakeholders accurately forecast EV demand growth across geographic regions to optimize charging infrastructure investments?
+* What vehicle attributes most strongly influence electric range and consumer adoption?
+* How can incentive programs be streamlined using predictive analytics?
+
+Traditional reporting methods often struggle to process large-scale, multi-dimensional EV datasets efficiently, limiting the ability to make timely, data-driven decisions.
+This project addresses these challenges by leveraging PySpark and machine learning to analyze over 269,000 EV registration records, enabling scalable insights into vehicle eligibility, demand forecasting, and adoption trends.
+
+##  Project Objectives
 
 * Understand key drivers of EV performance and adoption
 * Predict CAFV eligibility to streamline incentive allocation
@@ -63,7 +75,7 @@ This project leverages the Electric Vehicle Population dataset containing over *
 * Seaborn
 * Jupyter Notebook / Google Colab
 
-## 🔄 Data Preparation
+##  Data Preparation
 
 * Performed schema validation and data type casting using PySpark
 * Imputed missing `Base MSRP` and `Electric Range` values using **median values by Make–Model combinations**
@@ -86,7 +98,7 @@ Key findings from the exploratory analysis include:
 * CAFV-eligible vehicles represent the largest share of the dataset
 * Strong associations exist between vehicle make and model
 
-## 🤖 Machine Learning Models
+##  Machine Learning Models
 
 ### 1. Electric Range Prediction
 
@@ -160,12 +172,16 @@ Classes:
 
 ## 💡 Key Insights
 
-* Electric range is the strongest driver of CAFV eligibility.
-* Vehicle model is the most important predictor of electric range.
-* Demand for higher-range BEVs continues to grow.
-* Newer EV models are more likely to qualify for clean-fuel incentives.
-* BEV adoption highlights the need for expanded charging infrastructure.
-* Higher-priced vehicles generally offer greater electric range.
+* Electric Range is the strongest predictor of CAFV eligibility, accounting for 43.87% of the model's predictive power.
+* Model Year significantly influences CAFV qualification, with newer vehicles more likely to meet eligibility criteria.
+* Battery Electric Vehicles (BEVs) consistently demonstrate higher electric ranges and greater CAFV eligibility rates than Plug-in Hybrid Electric Vehicles (PHEVs).
+* The Random Forest Classifier achieved 99.59% accuracy, substantially outperforming the Logistic Regression baseline.
+* The Random Forest Regressor outperformed Linear Regression and Gradient Boosted Trees for electric range prediction, achieving an R² of 0.993 and RMSE of 8.08.
+* EV adoption shows significant variation across ZIP codes, highlighting the need for localized charging infrastructure planning.
+* Higher vehicle prices are generally associated with longer electric ranges, suggesting a trade-off between affordability and performance.
+* Forecasting results indicate continued growth in EV registrations, emphasizing the importance of proactive infrastructure expansion.
+
+
 
 ## 🚀 Business Impact
 
@@ -177,40 +193,6 @@ This project demonstrates how machine learning can support:
 * Inventory optimization for dealerships
 * Policy design and clean transportation initiatives
 
-## 📂 Repository Structure
-
-```text
-├── data/
-├── notebooks/
-│   ├── 01_data_preparation.ipynb
-│   ├── 02_eda.ipynb
-│   ├── 03_electric_range_prediction.ipynb
-│   ├── 04_cafv_eligibility_prediction.ipynb
-│   └── 05_ev_demand_forecasting.ipynb
-├── dashboards/
-├── images/
-├── src/
-├── requirements.txt
-└── README.md
-```
-
-## ▶️ Getting Started
-
-```bash
-git clone https://github.com/yourusername/ev-analytics.git
-
-cd ev-analytics
-
-pip install -r requirements.txt
-```
-
-Run the notebooks in sequence:
-
-1. Data Preparation
-2. Exploratory Data Analysis
-3. Electric Range Prediction
-4. CAFV Eligibility Prediction
-5. EV Demand Forecasting
 
 ## 🔮 Future Enhancements
 
@@ -226,4 +208,4 @@ Run the notebooks in sequence:
 
 Master's in Business Analytics | University of North Texas
 
-LinkedIn: *Add your profile link here*
+LinkedIn: 
