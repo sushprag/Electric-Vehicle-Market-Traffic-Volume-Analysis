@@ -207,4 +207,4 @@ This project demonstrates how machine learning can support:
 
 Master's in Business Analytics | University of North Texas
 
-LinkedIn: 
+LinkedIn: https://www.linkedin.com/in/sushmitha-manoharan/
