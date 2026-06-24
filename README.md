@@ -1,4 +1,4 @@
-#  Electric Vehicle Population Analytics & CAFV Eligibility Prediction
+#  Electric Vehicle Market Volume Analytics & CAFV Eligibility Prediction
 
 An end-to-end big data analytics project that analyzes electric vehicle adoption trends, predicts Clean Alternative Fuel Vehicle (CAFV) eligibility, estimates electric range, and forecasts EV demand using PySpark and machine learning.
 
